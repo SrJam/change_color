@@ -64,6 +64,7 @@ button {
     background-color: rgb(36, 36, 36);
     border-radius: 10px;
     border-color: transparent;
+    color: white;
 }
 
 @keyframes bouncy {
