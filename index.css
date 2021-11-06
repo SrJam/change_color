@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+:root{
+    overflow: hidden;
+    background-color: rgb(29, 29, 29);
+    --WH: 40px;
+    --radius: var(--WH)/2;
+    --dur: 3s;
+    --delay: var(--dur)/2;
+
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: [first] 25vh [second] auto [three] 33.33vh;    
+    grid-template-rows: [first] 20px [second] 140px [three] 250px [four] 25% [fim] auto;   
+    color: #444; 
+  }
+
+  .box {
+
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+
+  }
+
+  .title {
+    margin-top: 20px;
+    grid-column: second / span three;
+    grid-row: 1 / span 2;
+    text-align: center;
+    place-self: center;
+    font-family: 'Mochiy Pop One', sans-serif;
+  }
+
+  .circle {
+    grid-column: second / span three ;
+    grid-row: three / span four;
+    place-self: center;
+    border: 16px solid #2c2828; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+button {
+    grid-column: second / span three;
+    grid-row: four / span fim;
+    place-self: center;
+    height: 40px;
+    width: 100px;
+    animation:bouncy 5s infinite linear;
+    position: relative;
+    background-color: rgb(36, 36, 36);
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+@keyframes bouncy {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
+}
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+<script>
+
+
+
+        function generate(){
+            const randomColor = Math.floor(Math.random()*16777215).toString(16);
+            return randomColor
+        }
+
+        function applyi(){
+
+            randomColor = generate()
+            
+            document.getElementById("circle").style.borderTop = "16px solid #"+randomColor
+            document.getElementById("title").style.color = "#"+randomColor
+            document.getElementById("button").style.color = "#"+randomColor
+
+
+    }
+</script>
+
+
+<div class="wrapper">
+    <div class="title" id="title">INFINTE COLORED CIRCLE</div>
+    <div class="circle" id="circle"></div>
+    <button type="button" class="rainbow rainbow-1" id="button" onclick="applyi()">Change Color</button>
+  </div>
+
+</body>
