@@ -2,7 +2,7 @@
 
 :root{
     overflow: hidden;
-    background-color: rgb(29, 29, 29);
+    background-color: white;
     --WH: 40px;
     --radius: var(--WH)/2;
     --dur: 3s;
