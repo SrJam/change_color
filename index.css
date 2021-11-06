@@ -65,6 +65,7 @@ button {
     border-radius: 10px;
     border-color: transparent;
     color: white;
+    cursor: pointer;
 }
 
 @keyframes bouncy {
